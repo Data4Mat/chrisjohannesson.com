@@ -1,0 +1,59 @@
+body{
+    padding: 10px;
+    background: radial-gradient(silver, lightgreen);
+    min-height: 100vh;
+}
+footer{
+    background-color: transparent !important;
+}
+img{
+    padding: 5px;
+}
+
+.align_right {
+    text-align: right;
+}
+
+.align_left {
+    text-align: left;
+}
+
+.align_center {
+    text-align: center;
+}
+.content{
+    background-color: transparent;
+}
+.container{
+    padding: 15px;
+}
+.copyright_class{
+    text-align: center;
+    font-size: 0.7em;
+    color: navy;
+    padding-top: 20px;
+    padding-bottom: 3px;
+}
+.navbar{
+    background-color: rgb(88, 238, 88);
+    border: 5px ridge darkgreen;
+    border-radius: 8px;
+}
+.navbar-menu{
+    background-color: transparent;
+    padding: 5px;
+}
+.navbar-start{
+    background-color: lightgreen;
+    border-radius: 5px;
+    border: 5px ridge green;
+}
+.navbar-item:hover{
+    background-color:darkgreen !important;
+    color: yellow !important;
+}
+.me_class{
+    border: 5px groove green;
+    background: green;
+    border-radius: 5px;
+}
