@@ -1,0 +1,15 @@
+{
+  "name": "chrisjohannesson.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chris Johannesson",
+  "license": "ISC",
+  "dependencies": {
+    "Faker": "^0.7.2",
+    "json-server": "^0.16.3"
+  }
+}
