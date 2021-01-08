@@ -26,7 +26,7 @@
     </div>
     <footer class="footer">
         <div class="content has-text-centered">
-            <p class="copyright_class">Data4Mat &copy; 2020<br>Chris Johanneson</p>
+            <p class="copyright_class">Copyright &copy; 2020<br>Chris Johannesson</p>
         </div>
     </footer>
     <script src="/src/js/main.js"></script>
