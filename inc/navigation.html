@@ -9,20 +9,25 @@
         <span aria-hidden="true"></span>
     </a>
 </div>
-
+<!--
+    Navigation is performed by calling a JavaScript that calls a php script on the server side sending it 
+    the code for the desired page or rather the html that is going to be loaded into the viewing 
+    area of the browser. Here the function is called getPage(pageCode) and is defined in main.js
+-->
 <div id="mainNav" class="navbar-menu">
     <div class="navbar-start">
-        <a class="navbar-item" href="/index.php">
+        <a class="navbar-item" href="javascript: getPage('home')">
             Home
         </a>
-        <a class="navbar-item" href="/about.html">
+        <a class="navbar-item" href="javascript: getPage('about')">
             About
         </a>
-        <a class="navbar-item" href="/cv.html">
+        <a class="navbar-item" href="javascript: getPage('resume')">
             CV / Resume
         </a>
         <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link">
+            <a class="navbar-link" href="javascript: getPage('code')">
+                <!-- this href should be deleted for production unless we write a page for it. -->
                 Code demo pages
             </a>
             <div class="navbar-dropdown">

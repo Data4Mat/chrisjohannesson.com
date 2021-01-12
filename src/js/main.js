@@ -1,23 +1,49 @@
 window.onload = () => {
     var count = 0;
-    console.log(`main onload count: ${count}`);
+    //console.log(`main onload.`);
     if ('serviceWorker' in navigator) {
-        console.log(`main if_navigator count: ${count}`);
         navigator.serviceWorker
             .register('/sw.js');
-        count++;
     }
 }
 
+
 function loadIframes(data) {
-    alert(`main.js loadIframes data: ${data}`);
+    console.log(`main.js loadIframes data: ${data}`);
     let html = "";
     if (data === "wae") {
-
+        console.log(`main.js loadIframes 2`);
         html += `<iframe title="Weather and Exchange" style="min-height: 80vh; width: 75vw;" src="/weather-and-exchange/wae.html"></iframe>`;
+        console.log(`main.js loadIframes 3: ${html}`);
+    }
+    else if (data === "receipt") {
+        console.log(`main.js loadIframes 4`);
+        html += `<iframe title="Weather and Exchange" style="min-height: 80vh; width: 75vw;" src="/weather-and-exchange/wae.html"></iframe>`;
+        console.log(`main.js loadIframes 5`);
+    }
+    else {
+        console.log(`main.js loadIframes else data: ${data}`);
     }
 
     if (html !== "") {
-        Helper.setHtml("container", html);
+        console.log(`main.js loadIframes 10: ${html}`);
+        Helper.setHtml("main", html);
+    }
+}
+
+function getPage(data) {
+    let pages = ["home", "about", "resume"];
+    alert(`1 ${data} index ${pages.findIndex(tmp => tmp == data)}`);
+    if (pages.findIndex(tmp => tmp == data) > -1) {
+        //alert(`2 ${server} /page.php?page=${data}`);
+        fetch(`/page.php?page=${data}`)
+            .then(result => result.text())
+            .then(html => {
+                //alert(`3 ${xRes}`);
+                Helper.setHtml("main", html);
+            });
+    }
+    else {
+        Helper.setHtml("main", "<div>Error 401: Reasource not found! main page: " + data + "</div>");
     }
 }
