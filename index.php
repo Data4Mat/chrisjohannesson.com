@@ -5,6 +5,11 @@
     $tmpl = str_replace("#nav", $nav, $tmpl);
     $tmpl = str_replace("#page", "Home", $tmpl);
     $tmpl = str_replace("#footer", $footer, $tmpl);
+
+    $tmpl = str_replace("#left", '', $tmpl);
+    $tmpl = str_replace("#main_left", '', $tmpl);
+    $tmpl = str_replace("#main_right", '', $tmpl);
+    $tmpl = str_replace("#right", '', $tmpl);
     
     
 

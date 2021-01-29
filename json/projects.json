@@ -1,0 +1,19 @@
+{
+    "version":"0.1",
+    "date":"2021-01-25",
+    "pub-nodejs":{
+        "name": "Nodejs restAPI servers - nodejs and restAPI servers project",
+        "description": "The project contains two restAPI servers, main-api and math-api. Responding to both GET and POST requests. Client side developed in MVC",
+        "github": "https://github.com/ChrisJohDev/pub-nodejs"
+    },
+    "travel-agent-se":{
+        "name": "Fictitious travel agent - nodejs project",
+        "description": "The project is in Swedish. Showing a page that will give you a 5-day weather forecast and the exchange rate against the Swedish krona for the city of your choice. All live data straight from active restAPIs",
+        "github": "https://github.com/ChrisJohDev/pub-weatherExchangeRates"
+    },
+    "react project":{
+        "name": "Old time reciept - react project",
+        "description": "This web application will let you enter item, quantity and price. It calculates the cost per item and the running total and lists all items.",
+        "github": "https://github.com/ChrisJohDev/pub-reactBasics"
+    }
+}
