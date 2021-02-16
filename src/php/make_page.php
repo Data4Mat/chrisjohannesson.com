@@ -1,6 +1,6 @@
 <?php
 
-    function makePage($page){
+    function makePage($page, $lang="en"){
         $pattern = "/[^a-z]/i";
         $response = "";
         $match = array();
@@ -8,7 +8,7 @@
 
         if(!preg_match_all($pattern, $page, $match)){
             /* assemble the page if it's only letters in the $page variable */
-            $response = _buildPage($page);
+            $response = _buildPage($page, $lang);
         }
         else{
             $response = "<div>Error 401: Reasource not found! match page: $page : </div>".implode(" ,", $match[0]);;
@@ -17,27 +17,18 @@
         return $response;
     }
 
-    function _buildPage($page){
-        $return = "";
-        
-        switch($page){
-            case "about":
-                $return = file_get_contents("./inc/about.html");
-                break;
-            case "home":
-                $return = file_get_contents("./inc/home.html");
-                break;
-            case "resume":
-                $return = file_get_contents("./inc/resume.html");
-                break;
-            case "wae":
-                $return = file_get_contents("./weather-and-exchange/wae.html");
-                break;
-            default:
-                $return = "<div>Error 401: Reasource not found! buildPage: $page</div>";
+    function _buildPage($page, $lang){
+        //$return = "";
+        $html = file_get_contents("./inc/$page.html");
+        $items = json_decode(file_get_contents("./inc/json/$page-$lang.json"));
+
+        foreach($items as $key => $value){
+            $key = "#".$key;            
+            $html = str_replace($key, $value, $html);
         }
-
-        return $return;
-
+        
+        $html = str_replace("#lang",$lang,$html);
+        
+        return $html;
     }
 ?>

@@ -1,11 +1,34 @@
 body{
     padding: 10px;
     background: radial-gradient(silver, lightgreen);
+    min-height: 100vh !important;
+    margin: 0 !important;
+    color: navy;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* This section containing .page_container, .page_wrap, and footer together with the html
+makes it possible to position the footer at the bottom of the screen or after page content. 
+Items marked as "important to footer placement" below are essential to make this work.*/
+.page_container {
+    /*important to footer placement*/
+    position: relative;
     min-height: 100vh;
 }
-footer{
-    background-color: transparent !important;
+.page_wrap {
+    /*important to footer placement*/
+    padding-bottom: 50px;
 }
+
+footer{
+    text-align: center;
+    position: absolute; /*important to footer placement*/
+    bottom: 0;/*important to footer placement*/
+    background-color: transparent !important;
+    height: 50px;/*important to footer placement*/
+    width: 100vw;
+}
+
 img{
     padding: 5px;
 }
@@ -52,8 +75,19 @@ img{
     background-color:darkgreen !important;
     color: yellow !important;
 }
+.main_text{
+    background: radial-gradient(lightgreen,silver );
+    opacity: 40%;
+    font-size: 1.2em;
+    border: 3px inset green;
+    text-align: left;
+    padding: 8px;
+}
 .me_class{
     border: 5px groove green;
     background: green;
     border-radius: 5px;
+}
+.text_color {
+    color: navy;
 }
