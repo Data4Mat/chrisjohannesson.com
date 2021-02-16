@@ -1,0 +1,11 @@
+{
+    "welcome":"Welcome to",
+    "about":"About",
+    "projects":"Projects",
+    "demo":"Demo Pages",
+    "contact":{
+        "tag":["div","a"],
+        "text": "Contact Information",
+        "url": "https://chrisjohannesson.com/index.php?page=contact&lang=en"
+    }
+}

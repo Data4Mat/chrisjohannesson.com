@@ -35,12 +35,12 @@ function loadIframes(data) {
     }
 }
 
-function getPage(data) {
-    let pages = ["home", "about", "resume"];
+function getPage(data, lang) {
+    let pages = ["home", "about", "projects", "demo", "contact"];
     //alert(`1 ${data} index ${pages.findIndex(tmp => tmp == data)}`);
     if (pages.findIndex(tmp => tmp == data) > -1) {
         //alert(`2 ${server} /page.php?page=${data}`);
-        fetch(`/page.php?page=${data}`)
+        fetch(`/index.php?page=${data}&lang=${lang}`)
             .then(result => result.text())
             .then(html => {
                 //alert(`3 ${xRes}`);

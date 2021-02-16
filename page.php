@@ -1,3 +1,5 @@
+// File obsolete!
+
 <?php
 /* Should handle all page requests from the client. */
 
