@@ -57,29 +57,40 @@ class viewClass {
             date = new Date((Current.forecast.list[i].dt + timezoneCode) * 1000);
             html += Helper.weekDayTable(date.getUTCDay(), 'SE') + ', ' + Helper.monthTable(date.getMonth(), 'SE');
             html += ' ' + date.getUTCDate() + ' ' + date.getUTCFullYear();
-            html += ' kl. ' + Helper.calculateTime(Current.forecast.list[i].dt, timezoneCode);
+            html += ' at ' + Helper.calculateTime(Current.forecast.list[i].dt, timezoneCode);
             html += '</th></tr></thead>';
-            html += '<tbody><tr><td><img class="weather_image" src="';
+            html += '<tbody><tr><td>';
+            // *** The new inserted code and re-writing och old code to make  the entire weather section responsive by using flexbox design ***
+            //** Start of flexbox section
+            html += '<div class="weather_flex_container">';
+            // First flex-box containing the image and weather description.
+            html += `<div class="weather_icon"><img class="weather_section-1" src = "`;
             html += View.weatherIconString(Current.forecast.list[i].weather[0].icon) + '" />';
             html += '<br><span class="weather_main">' + Controller.translateWeather(Current.forecast.list[i].weather[0].main) + '</span>';
-            html += '<br><span class="weather_description">' + Current.forecast.list[i].weather[0].description + '</span></td>';
-            html += '<td><table><tr><td class="align_right head_list">Temp:</td><td>';
+            html += '<br><span class="weather_description">' + Current.forecast.list[i].weather[0].description + '</span>';
+            html += `</div>`
+            // Second flex-box section containing temp, feels like and windspeed.
+            html += `<div class="weather_section-2"><table><tbody><tr>`
+            html += '<td class="align_right head_list">Temp:</td><td>';
             html += View.kelvinToCelcius(Current.forecast.list[i].main.temp) + '&deg;C \/ ';
-            html += View.kelvinToFahrenheit(Current.forecast.list[i].main.temp) + '&deg;F</td>';
-            html += '<td class="align_right head_list">Fuktighet:</td><td class="align_right">';
-            html += Current.forecast.list[i].main.humidity + '\%</td></tr>';
+            html += View.kelvinToFahrenheit(Current.forecast.list[i].main.temp) + '&deg;F</td></tr>';
             html += '<tr><td class="align_right head_list">Känns som:</td><td>';
             html += View.kelvinToCelcius(Current.forecast.list[i].main.feels_like) + '&deg;C \/ ';
-            html += View.kelvinToFahrenheit(Current.forecast.list[i].main.feels_like) + '&deg;F</td>';
-            html += '<td class="align_right head_list">Soluppgång:</td><td>';
-            html += Helper.calculateTime(Current.forecast.city.sunrise, timezoneCode) + '</td></tr>';
+            html += View.kelvinToFahrenheit(Current.forecast.list[i].main.feels_like) + '&deg;F</td></tr>';
             html += '<tr><td class="align_right head_list">Vind hastighet:</td><td class="align_right">';
             html += Current.forecast.list[i].wind.speed + ' m\/s';
-            html += '</td>';
-            html += '<td class="align_right head_list">Solnedgång:</td><td>';
+            html += '</td></tr></tbody></table></div>';
+            // Third flex-box section containing humidity, sun up and and sun set.
+            html += `<div class="weather_section-3"><table><tbody><tr>`;
+            html += '<td class="align_right head_list">Fuktighet:</td><td class="align_right">';
+            html += Current.forecast.list[i].main.humidity + '\%</td></tr>';
+            html += '<tr><td class="align_right head_list">Soluppgång:</td><td>';
+            html += Helper.calculateTime(Current.forecast.city.sunrise, timezoneCode) + '</td></tr>';
+            html += '<tr><td class="align_right head_list">Solnedgång:</td><td>';
             html += Helper.calculateTime(Current.forecast.city.sunset, timezoneCode) + '</td></tr>';
-            html += '</tbody></table>';
-            html += '</table></div>';
+            html += '</tbody></table></div></div>';
+            // Should this be here???
+            html += '</table name="is-this-necessary"></div>';
 
             date = ''; // Clear date
         }
