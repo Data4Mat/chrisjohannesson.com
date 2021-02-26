@@ -1,0 +1,110 @@
+:root {
+    /* Sets max font-size for text Chris Johannesson 
+        on home and about page. Good down to 320px wide screens. */
+    --name480: 6.5vw;
+    --text-font-size: 3vw;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+    body {
+        padding: 5px;
+    }
+
+    nav {
+        max-width: 93vw;
+        margin: 0px 3vw;
+    }
+
+    .demo-list {
+        transform: none;
+    }
+
+    .demo-list li {
+        transform: rotate(-10deg);
+        margin: 1vw;
+        padding-top: 5px;
+    }
+
+    section,
+    .section {
+        padding: 1vh 3vw;
+    }
+
+    div.is-one-fifth,
+    div.is-one-third {
+        margin: 0px;
+        padding: 0px;
+        border: 0px;
+    }
+
+    #page_main {
+        font-size: 0.5rem;
+    }
+
+    .x-media_column {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .x-media_column>p[class*="is-4"] {
+        margin-bottom: 0.8rem;
+    }
+
+    .x-media_column_main {
+        line-height: 0.8rem;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .max_photo_128 {
+        max-width: 128px;
+    }
+
+    .demo-list {
+        transform: none;
+    }
+
+    .demo-list li {
+        transform: rotate(-10deg);
+        margin: 1vw;
+        padding-top: 5px;
+    }
+
+    .my_name {
+        white-space: nowrap;
+        font-size: var(--name480) !important;
+    }
+
+    .x-media_column {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .x-media_column_main {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: var(--text-font-size);
+    }
+
+    /* ***** Bulma classes override - START ***** */
+    .is-one-third {
+        padding: 0px;
+    }
+
+    section,
+    .section {
+        padding: 1rem;
+        padding-bottom: 0px;
+    }
+
+    /* ***** Bulma classes override - END ***** */
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {}
+
+@media only screen and (min-width: 992px) {}
