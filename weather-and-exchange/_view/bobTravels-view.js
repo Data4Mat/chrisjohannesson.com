@@ -57,7 +57,7 @@ class viewClass {
             date = new Date((Current.forecast.list[i].dt + timezoneCode) * 1000);
             html += Helper.weekDayTable(date.getUTCDay(), 'SE') + ', ' + Helper.monthTable(date.getMonth(), 'SE');
             html += ' ' + date.getUTCDate() + ' ' + date.getUTCFullYear();
-            html += ' at ' + Helper.calculateTime(Current.forecast.list[i].dt, timezoneCode);
+            html += ' kl. ' + Helper.calculateTime(Current.forecast.list[i].dt, timezoneCode);
             html += '</th></tr></thead>';
             html += '<tbody><tr><td><img class="weather_image" src="';
             html += View.weatherIconString(Current.forecast.list[i].weather[0].icon) + '" />';
