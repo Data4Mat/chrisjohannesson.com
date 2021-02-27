@@ -17,7 +17,7 @@ function loadIframes(data) {
     let html = "";
     if (data === "wae") {
         //console.log(`main.js loadIframes 2`);
-        html += `<iframe title="Weather and Exchange" style="min-height: 80vh; width: 75vw;" src="/weather-and-exchange/wae.html"></iframe>`;
+        html += `<iframe title="Weather and Exchange" class="demo_frame" src="/weather-and-exchange/wae.html"></iframe>`;
         //console.log(`main.js loadIframes 3: ${html}`);
     }
     else if (data === "receipt") {

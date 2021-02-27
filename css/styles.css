@@ -10,6 +10,12 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.demo_frame {
+    min-height: 80vh;
+    max-height: 90vh;
+    max-width: 95vw;
+}
+
 section,
 .section {
     padding-bottom: 0px;

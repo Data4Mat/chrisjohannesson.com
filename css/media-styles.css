@@ -5,14 +5,13 @@
     --text-font-size: 3vw;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 479px) {
+@media only screen and (max-width: 319px) {
     body {
         padding: 5px;
     }
 
-    nav {
-        max-width: 93vw;
-        margin: 0px 3vw;
+    .container {
+        padding: 15px 5px;
     }
 
     .demo-list {
@@ -25,9 +24,56 @@
         padding-top: 5px;
     }
 
+    div.is-one-fifth,
+    div.is-one-third {
+        margin: 0px;
+        padding: 0px;
+        border: 0px;
+    }
+
+    nav {
+        max-width: 93vw;
+        margin: 0px 3vw;
+    }
+
+    #page_main {
+        font-size: 0.5rem;
+    }
+
     section,
     .section {
-        padding: 1vh 3vw;
+        padding: 1vh 5px;
+    }
+
+    .x-media_column {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .x-media_column>p[class*="is-4"] {
+        margin-bottom: 0.8rem;
+    }
+
+    .x-media_column_main {
+        line-height: 0.8rem;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+    body {
+        padding: 5px;
+    }
+
+    .demo-list {
+        transform: none;
+    }
+
+    .demo-list li {
+        transform: rotate(-10deg);
+        margin: 1vw;
+        padding-top: 5px;
     }
 
     div.is-one-fifth,
@@ -37,8 +83,18 @@
         border: 0px;
     }
 
+    nav {
+        max-width: 93vw;
+        margin: 0px 3vw;
+    }
+
     #page_main {
         font-size: 0.5rem;
+    }
+
+    section,
+    .section {
+        padding: 1vh 15px;
     }
 
     .x-media_column {

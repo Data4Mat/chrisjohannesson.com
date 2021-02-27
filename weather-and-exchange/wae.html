@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -7,7 +6,7 @@
     <title>Bluff och Båg Travels</title>
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
-    <link rel="stylesheet" type="text/css" href="css/media-styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/media-styles.css">
     <script src="js/helper-class.js"></script>
     <script src="_model/bobTravels-model.js"></script>
     <script src="_view/bobTravels-view.js"></script>
@@ -32,6 +31,7 @@
         weatherDataLoaded.initEvent('weatherDataLoaded', true, true);
         const currencyDataLoaded = document.createEvent('Event');
         currencyDataLoaded.initEvent('currencyDataLoaded', true, true);
+
         // attach eventlisteners start app.
         document.addEventListener('DOMContentLoaded', function () {
             document.addEventListener('cityDataLoaded', Controller.setSelector);
@@ -39,7 +39,6 @@
             document.addEventListener('weatherDataLoaded', Controller.refineWeatherData);
             document.addEventListener('currencyDataLoaded', Controller.setExchangeRate)
             Controller.init();
-
         });
     </script>
 
