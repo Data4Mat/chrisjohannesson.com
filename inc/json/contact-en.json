@@ -1,0 +1,9 @@
+{
+    "headline":"Contact Me",
+    "emailAddress":"info@chrisjohannesson.com",
+    "emailLabel": "Email: ",
+    "linkedinAddress":"https://www.linkedin.com/in/chris-johannesson-b341944a/",
+    "linkedinLabel":"LinkedIn Page:",
+    "githubLabel":"Github Repository:",
+    "githubAddress":"https://github.com/ChrisJohDev?tab=repositories"
+}
