@@ -5,8 +5,8 @@ $pages = $site->pages;
 
 // Input is page name as data, and the file which to check data against
 class CheckRequest{
-    constructor($data, $jsonDataFile){};
-null;
+    // constructor($data, $jsonDataFile){}
+
 }
 
 

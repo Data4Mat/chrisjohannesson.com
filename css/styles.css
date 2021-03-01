@@ -10,6 +10,41 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.contact_page_holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact_page_items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    min-width: 100%;
+}
+
+.contact_page_items a {
+    min-width: 100%;
+}
+
+.contact_page_items label {
+    font-weight: bold;
+    min-width: 100%;
+}
+
+.contact_page_items .item {
+    padding-left: 10px;
+    text-align: left;
+    white-space: nowrap;
+    min-width: 70%;
+}
+
+.contact_page_items .label_item {
+    min-width: 30%;
+    text-align: right;
+}
+
+
 .demo_frame {
     min-height: 80vh;
     max-height: 90vh;
