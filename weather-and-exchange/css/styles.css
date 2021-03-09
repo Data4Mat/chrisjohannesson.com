@@ -1,165 +1,64 @@
-
 body {
     /*background-image: url(../images/world-map.jpg);*/
-    
+
     /*background-color: radial-gradient(darkturquoise,slategray);*/
-    background: url(../images/world-map.jpg), radial-gradient(darkturquoise,slategray );
+    background: url(../images/world-map.jpg), radial-gradient(darkturquoise, slategray);
     background-size: 100%;
+    background-position: 50% 50%;
     background-blend-mode: soft-light;
     font-family: Palatino, Tahoma, Geneva, Verdana, sans-serif;
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-attachment: fixed;
-  }
-  
-  .align_right {
+}
+
+.align_right {
     text-align: right;
-  }
-  
-  .align_left {
+}
+
+.align_left {
     text-align: left;
-  }
-  
-  .align_center {
+}
+
+.align_center {
     text-align: center;
-  }
-  
-  .label {
+}
+
+.city_country {
+    display: inline;
+    font-size: 1em;
     font-weight: bold;
-  }
-  
-  .page_head {
-    text-align: center;
-    font-weight: bold;
-    font-size: 2.5em;
-    margin: 15px;
-  }
-  
-  .copyright_class {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+    border: 3px groove slategrey;
+    border-radius: 8px;
+    background: linear-gradient(slategrey, darkturquoise, slategrey);
+}
+
+.city_optgroup {
+    background-color: lightseagreen;
+    color: darkblue;
+}
+
+.container {
+    padding-top: 10px;
+    width: 100vw;
+    height: 100vh;
+}
+
+.copyright_class {
     text-align: center;
     font-size: 0.7em;
     color: navy;
     padding-top: 20px;
     padding-bottom: 3px;
-  }
+}
 
-header{
-    color: darkblue;
-}
-.headline{
-    vertical-align: middle;
-    text-align: center;
-    padding: 20px 0px 40px 0px;
-}
-.city_country{
-    
-   font-size: 1em;
-   font-weight: bold;
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   padding: 10px;
-   border: 3px ridge slategrey;
-   border-radius: 8px;
-   background: linear-gradient(slategrey, darkturquoise,slategrey);
-}
-.country_flag{
+.country_flag {
     margin-right: 15px;
     vertical-align: middle;
 }
-.weather_head{
-    padding-bottom: 10px;
-    font-size: 1.2em;
-}
-.container{
-    padding-top: 10px;
-}
-.selector{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-bottom: 20px;
-}
-.selector_box{
-    display: flex;
-    flex-direction: column;
-    max-width: max-content;
-}
-#selected_city{
-    /*padding-top: 5px;
-    
-    display: block;*/
-    border-color: darkturquoise;
-    width: 100%;
-    margin: 0px;
-    background-color: darkturquoise;
-    color: navy;
-}
-.city_optgroup{
-    background-color: lightseagreen;
-    color: darkblue;
-}
 
-#selected_city_label{
-    font-size: x-large;
-    display: block;
-    padding: 10px;
-    color: navy;
-    background-color: darkturquoise;
-    max-width: max-content;
-    margin: 0px;
-    border-radius: 8px 8px 0px 0px ;
-}
-.presentation_box{
-    /*border-top: 3px ridge darkslategray;*/
-    padding-top: 10px;
-}
-
-.dayHead{
-    padding-bottom: 8px;
-}
-.weather_main{
-    font-weight: bold;
-}
-.weather_description{
-    text-transform: capitalize;
-}
-.weather_image{
-   /*border: 3px solid black;*/
-    width: 60%;
-    height:auto;
-    padding: 0px;
-    margin: 0px;
-}
-
-.weather_box_holder{
-padding: 10px;
-border: 5px ridge slategray;
-height: 300px;
-overflow-y: scroll;
-}
-.weather_box{
-    padding: 5px;
-    border: 3px ridge slategrey;
-    margin-bottom: 15px;
-    font-size: 0.9em;
-    background-color: darkturquoise;
-    opacity: 55%;
-}
-.weather_box td{
-    padding-left: 4px;
-    padding-right: 4px;
-}
-.head_list{
-    font-weight: bold;
-}
-.section_box{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-.currency_head{
-    padding-bottom: 10px;
-    font-size: 1.2em;
-}
-.currency_box{
+.currency_box {
     padding: 15px 25px;
     border: 5px ridge slategrey;
     margin-bottom: 15px;
@@ -169,19 +68,152 @@ overflow-y: scroll;
     height: 290px;
 }
 
-/*.currency_box td{
-    padding: 3px;
-}*/
-.currency_label{
-    font-weight: bold;
-    padding-top: 25px;
+.currency_head {
+    padding-bottom: 10px;
+    font-size: 1.2em;
 }
-.currency_input{
+
+.currency_input {
     width: 80px;
     border: 3px ridge silver;
     border-radius: 5px;
     background-color: lightskyblue;
 }
-.currency_separator{
+
+.currency_label {
+    font-weight: bold;
+    padding-top: 25px;
+}
+
+.currency_separator {
     padding-top: 20px;
+}
+
+.dayHead {
+    padding-bottom: 8px;
+}
+
+header {
+    color: darkblue;
+}
+
+.head_list {
+    font-weight: bold;
+}
+
+.headline {
+    vertical-align: middle;
+    text-align: center;
+    padding: 20px 0px 40px 0px;
+}
+
+.label {
+    font-weight: bold;
+}
+
+.page_head {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5em;
+    margin: 15px;
+}
+
+.presentation_box {
+    /*border-top: 3px ridge darkslategray;*/
+    padding-top: 10px;
+}
+
+.section_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#selected_city {
+    /*padding-top: 5px;
+    
+    display: block;*/
+    border-color: darkturquoise;
+    width: 100%;
+    margin: 0px;
+    background-color: darkturquoise;
+    color: navy;
+}
+
+#selected_city_label {
+    font-size: x-large;
+    display: block;
+    padding: 10px;
+    color: navy;
+    background-color: darkturquoise;
+    max-width: max-content;
+    margin: 0px;
+    border-radius: 8px 8px 0px 0px;
+    border-bottom: outset;
+    border-bottom-color: grey;
+}
+
+.selector {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.selector_box {
+    display: flex;
+    flex-direction: column;
+    max-width: max-content;
+    border: 3px outset grey;
+    margin-bottom: -1rem;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.weather_box {
+    padding: 5px;
+    border: 3px ridge slategrey;
+    margin-bottom: 15px;
+    font-size: 0.9em;
+    line-height: 1;
+    background-color: darkturquoise;
+    opacity: 55%;
+}
+
+.weather_box td {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.weather_box_holder {
+    padding: 10px;
+    border: 5px ridge slategray;
+    height: 300px;
+    overflow-y: scroll;
+}
+
+.weather_description {
+    text-transform: capitalize;
+}
+
+.weather_flex_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather_head {
+    padding-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.weather_image {
+    /*border: 3px solid black;*/
+    width: 60%;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+}
+
+.weather_main {
+    font-weight: bold;
 }

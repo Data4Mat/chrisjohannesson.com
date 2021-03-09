@@ -1,0 +1,23 @@
+{
+    "welcome": "Projects Worked On",
+    "project": [{
+        "title": "Title project 1",
+        "description": "Description of project one but a whole lot more text.",
+        "linkName": "https://github.com/ChrisJohDev"
+    }],
+    "project 2": [{
+        "title": "Title project 2",
+        "description": "Description of project two but a whole lot more text.",
+        "linkName": "https://github.com/ChrisJohDev"
+    }],
+    "project 3": [{
+        "title": "Title project 3",
+        "description": "Description of project three but a whole lot more text.",
+        "linkName": "https://github.com/ChrisJohDev"
+    }],
+    "project 4": [{
+        "title": "Title project 4",
+        "description": "Description of project four but a whole lot more text.",
+        "linkName": "https://github.com/ChrisJohDev"
+    }]
+}

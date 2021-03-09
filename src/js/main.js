@@ -17,7 +17,7 @@ function loadIframes(data) {
     let html = "";
     if (data === "wae") {
         //console.log(`main.js loadIframes 2`);
-        html += `<iframe title="Weather and Exchange" style="min-height: 80vh; width: 75vw;" src="/weather-and-exchange/wae.html"></iframe>`;
+        html += `<iframe title="Weather and Exchange" class="demo_frame" src="/weather-and-exchange/wae.html"></iframe>`;
         //console.log(`main.js loadIframes 3: ${html}`);
     }
     else if (data === "receipt") {
@@ -36,7 +36,7 @@ function loadIframes(data) {
 }
 
 function getPage(data, lang) {
-    let pages = ["home", "about", "projects", "demo", "contact"];
+    let pages = ["home", "about", "projects", "demoPages", "contact"];
     //alert(`1 ${data} index ${pages.findIndex(tmp => tmp == data)}`);
     if (pages.findIndex(tmp => tmp == data) > -1) {
         //alert(`2 ${server} /page.php?page=${data}`);

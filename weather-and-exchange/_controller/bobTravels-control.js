@@ -105,7 +105,9 @@ class controllerClass {
     // Responds to event currencyDataLoaded
     setExchangeRate() {
         View.setCurrencyData();
-        Helper.focus('currency_input1');
+        if (window.innerWidth > 767) {
+            Helper.focus('currency_input1');
+        }
     }
 
     // Forwards call to Model.calculateExchangeRate() called from View.setCurrencyData()
