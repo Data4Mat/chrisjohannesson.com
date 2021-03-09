@@ -1,9 +1,12 @@
 {
-    "headline":"Contact Me",
-    "emailAddress":"info@chrisjohannesson.com",
+    "headline":"Contact me",
+    "emailHref":"info@chrisjohannesson.com",
+    "emailAddress":"info@ChrisJohannesson.com",
     "emailLabel": "Email: ",
     "linkedinAddress":"https://www.linkedin.com/in/chris-johannesson-b341944a/",
     "linkedinLabel":"LinkedIn Page:",
+    "linkedinName":"Chris Johannesson",
     "githubLabel":"Github Repository:",
-    "githubAddress":"https://github.com/ChrisJohDev?tab=repositories"
+    "githubAddress":"https://github.com/ChrisJohDev?tab=repositories",
+    "githubName":"Chris Johannesson (ChrisJohDev)"
 }

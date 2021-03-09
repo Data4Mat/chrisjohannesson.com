@@ -1,0 +1,7 @@
+{
+    "welcome":"Available Demo Pages",
+    "wae":"The idea behind this web page was to create a prototype for a Travel Agent where a city could be chosen from a dropdown list.<br>It should be capable to show temperatures and weather for the next 5 days and current exchange rate where you should be able to calculate the amount in foreign currency given the amount in local (SEK) currency.",
+    "codeLink":"https://github.com/ChrisJohDev/pub-weatherExchangeRates",
+    "codeInfo":"The original code, that is at Github, was not responsive. That and som other items that was updated might show up at github at some point in the future.",
+    "headline":"Travel Agent"
+}
