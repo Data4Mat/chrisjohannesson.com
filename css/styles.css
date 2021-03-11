@@ -1,6 +1,14 @@
 /* @import url(debug.css);
 
 */
+:root {
+    /* Sets max font-size for text Chris Johannesson 
+        on home and about page. Good down to 320px wide screens. */
+    --name480: 6.5vw;
+    --name300: 4vw;
+    --text-font-size: 3vw;
+}
+
 body {
     padding: 0px;
     background: radial-gradient(silver, lightgreen);
@@ -69,6 +77,10 @@ body {
     max-width: 90vw;
 }
 
+.demoPage_link {
+    text-align: left;
+}
+
 .home_name {
     /*max-width: 90vw;*/
     white-space: nowrap;
@@ -92,8 +104,9 @@ img {
     border-radius: 5px;
 }
 
-.my_name {
+.page_headline {
     white-space: nowrap;
+    color: navy;
 }
 
 .navbar {
@@ -118,6 +131,15 @@ img {
     color: yellow !important;
 }
 
+.project_description {
+    text-align: left;
+    overflow: hidden;
+}
+
+.project_description strong {
+    color: navy;
+}
+
 .project_item {
     border-bottom: 2px solid green;
     margin-top: 1.8rem;
@@ -126,6 +148,8 @@ img {
 
 .project_link {
     padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    text-align: left;
 }
 
 section,

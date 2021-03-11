@@ -33,6 +33,11 @@
         max-width: calc(100% - 26px);
     }
 
+    main {
+        padding-left: 1px;
+        padding-right: 17px;
+    }
+
     .section_box {
         flex-direction: column;
         align-items: center;

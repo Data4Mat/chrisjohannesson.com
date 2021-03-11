@@ -1,23 +1,69 @@
 {
-    "welcome": "Projects Worked On",
+    "welcome": "Previous Projects",
     "project": [{
-        "title": "Title project 1",
-        "description": "Description of project one but a whole lot more text.",
-        "linkName": "https://github.com/ChrisJohDev"
+        "title": "Travel Agent",
+        "description": "The purpose of this project was to create a working page for a fictitious travel agency where you can choose, from a dropdown list populated from a JSON file, which city you want to travel to and then get a five-day forecast for the weather around noon local time and the exchange rate against the Swedish krona. It should also be able to calculate what a certain amount of Swedish kronas (SEK)  gives in the foreign currency. It shall be live data retrieved from the relevant weather and current exchange rates restAPIs and be possible to present to the customer.",
+        "linkHref": "https://github.com/ChrisJohDev/pub-weatherExchangeRates",
+        "linkName":"pub-WeatherExchangeRates"
     }],
     "project 2": [{
-        "title": "Title project 2",
-        "description": "Description of project two but a whole lot more text.",
-        "linkName": "https://github.com/ChrisJohDev"
+        "title": "React Project",
+        "description": "Develop a prototype for an old-fashioned store receipt. Because the goods are not marked digitally, the cashiers will have to enter the goods in the old traditional way, i.e. with goods, number and price.",
+        "linkName": "React Basics",
+        "LinkHref":"https://github.com/ChrisJohDev/pub-reactBasics"
     }],
     "project 3": [{
-        "title": "Title project 3",
-        "description": "Description of project three but a whole lot more text.",
-        "linkName": "https://github.com/ChrisJohDev"
+        "title": "Nodejs and Expressjs",
+        "description": "The project should include two Node.js api servers that can communicate with each other and display the results to a client view (HTML page). Furthermore, the requirements were that it should be built with Express.js and be able to handle both GET and POST requests. My solution uses MVC in the front end to collect requested data from the master server that contacts the math server if necessary. The math server receives the POST request and performs the requested calculation and sends the response back to the main server. The result is then presented in the client.",
+        "linkName": "pub-Node.js",
+        "linkHref":"https://github.com/ChrisJohDev/pub-nodejs"
     }],
     "project 4": [{
-        "title": "Title project 4",
-        "description": "Description of project four but a whole lot more text.",
-        "linkName": "https://github.com/ChrisJohDev"
+        "title": "Website chris.maverick-web.com",
+        "description": "<strong>Server:</strong><br>The server page was written entirely in Perl. I used a modular system to divide functionalities into the main script and various public modules from different Perl libraries. Which code that was sent back was depending on which browser it was and what support there was for the DOM-model and JavaScript. At the time, browser support was one of the really hard bits. The implementation of the W3C standards varied widely and not everyone supported all parts. Here we had support for Opera, Netscapes mozilla browser with gecko engine, Microsoft's Internet Explorer and a user agent called amaya.<br><br><strong>Client:</strong><br>Here we used JavaScript that I developed and a library from Adobe GoLive that had many useful features.<br><br><em><strong>Please note:</strong><br>The website is no longer running and the domain name is released.</em>",
+        "linkName": "chris.maverick-web.com website",
+        "linkHref":"https://github.com/ChrisJohDev/chris-maverick-website"
+    }],
+    "project 5": [{
+        "title": "Website maverick-web.com",
+        "description": "<strong>Server:</strong><br>The server side was written entirely in Perl. I used a modular system to divide functionalities into the main script and various public modules from different Perl libraries. Unfortunately, the project was discontinued before all modules had been developed. Here, too, browser support was a very important part of what should be returned. Here we had support for Opera, Netscapes mozilla browser with gecko engine, Firebird, Microsoft's Internet Explorer and a user agent called amaya.<br><br><strong>Client:</strong><br>Here we used JavaScript. Here I had also developed a system to upload data from the server that would then be injected into the DOM tree and thus be able to update the content without having to reload the website. This was before AJAX and Microsoft Silverlight existed. The feature was an early precursor to the one you find in today’s so-called ‘Single-page’ websites.<br><br><em><strong>Please note:</strong><br>The website is no longer running and the domain name is released.</em>",
+        "linkName": "Maverick-Web",
+        "linkHref":"https://github.com/ChrisJohDev/maverick-web"
+    }],
+    "project 6": [{
+        "title": "Website igp.ph",
+        "description": "The website was developed for IGP (Intensity Glow Products) a beauty company in the Philippines in 2007-08<br><br><strong>Server:</strong><br>The server side was developed in C#. Data was contained in xml files and xsl stylesheets were used for the transformation.<br><br><strong>Client:</strong><br>The client side was developed in xhtml, css and used JavaScript that I developed. There were pages for Company Information, News, Consumer Products, Contact Page, Tips for Use of Products, Retailers, Job Page, Product Usage Instruction Pages, Special Offer for Retailers, etc.<br><br><em><strong>Please note:</strong><br>The website is no longer running and the domain name is released.</em>",
+        "linkName": "IGP - Intensity Glow Products",
+        "linkHref":"https://github.com/ChrisJohDev/igp-website"
+    }],
+    "project 7": [{
+        "title": "Jotrafin - Trader",
+        "description": "Windows application developed in C# to facilitate in financial trading. There is support for Fibonacci levels and calculations for profits at different starting levels. There was also the ability to log into a trading account via FXCM's API but this is long since gone and the login features thus do not work as well as all other features related to a specific account. However, Fibonacci and Pivot levels work regardless.",
+        "linkName": "Jotrafin - Trader 1",
+        "linkHref":"https://github.com/ChrisJohDev/Jotrafin-Trader1"
+    }],
+    "project 8": [{
+        "title": "Trade Calculator 1",
+        "description": "Windows application developed in C# to facilitate in financial trading. Here it is developed for a specific trading models called Flagpole flag and pennants. You enter the highest value and the lowest value for a so-called Flagpole and entry, stop, exit1 and exit2 are calculated and the tab Trade Figures calculates any loss, profit on exit1, profit on exit2 and total profit in dollars.",
+        "linkName": "Trade calculator 1",
+        "linkHref":"https://github.com/ChrisJohDev/TradeCalculator1"
+    }],
+    "project 9": [{
+        "title": "Trade Calculator 3",
+        "description": "Windows application developed in C# to facilitate in financial trading. Here it is developed for several different trading strategies such as Flagpole, Slingshot, Triangle (up and down), various eruption scenarios and a strategy that follows EMA(10).<br>You will then receive calculations for entry, stop, exit1 and exit2 and a number of calculated values for stop, exits totals and account balance at different outcomes as well as profit/risk calculations. Trades can also be saved for later use or to see how a particular strategy had played out.",
+        "linkName": "Trade calculator 3",
+        "linkHref":"https://github.com/ChrisJohDev/TradeCalculator3"
+    }],
+    "project 10": [{
+        "title": "Jotrafin - Trading Tools",
+        "description": "Here are only the files to install the application on a Windows system. Functionalities, Fibonacci levels, Pivot resistance and support levels, Breakout trades setups, Flagpole setup, calculation of maximum lot size, distance calculation between two prices in pips and a pop-up window for profit calculations.",
+        "linkName": "https://github.com/ChrisJohDev",
+        "linkHref":"https://github.com/ChrisJohDev/TradingTools"
+    }],
+    "project 11": [{
+        "title": "Disclaimer!",
+        "description": "All code is copyrighted under GNU General Public License v3.0 and can be modified and used in accordance with the copyright below.<br><br>All trading softwares are used at own risk. Please, be adviced that all forms of financial trading carrys a high degree of risk of losing all or part of invested capital.<br><br><em>The author doesn't leave any guarantees to the correctness of trading strategies and <strong>CANNOT</strong> be held responsible for possible losses or profits from trades.</em><br><br>Before trading seek professinal advice and do not rely on any of the softwares found on this or any other site.<br><br><strong>GNU General Public License v3.0</strong><br><em>Permissions of this strong copyleft license are conditioned on making available complete source code of licensed works and modifications, which include larger works using a licensed work, under the same license. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights.</em>",
+        "linkName": "None",
+        "linkHref":"#"
     }]
 }
