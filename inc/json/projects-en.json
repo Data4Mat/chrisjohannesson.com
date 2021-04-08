@@ -10,7 +10,7 @@
         "title": "React Project",
         "description": "Develop a prototype for an old-fashioned store receipt. Because the goods are not marked digitally, the cashiers will have to enter the goods in the old traditional way, i.e. with goods, number and price.",
         "linkName": "React Basics",
-        "LinkHref":"https://github.com/ChrisJohDev/pub-reactBasics"
+        "linkHref":"https://github.com/ChrisJohDev/pub-reactBasics"
     }],
     "project 3": [{
         "title": "Nodejs and Expressjs",
@@ -57,7 +57,7 @@
     "project 10": [{
         "title": "Jotrafin - Trading Tools",
         "description": "Here are only the files to install the application on a Windows system. Functionalities, Fibonacci levels, Pivot resistance and support levels, Breakout trades setups, Flagpole setup, calculation of maximum lot size, distance calculation between two prices in pips and a pop-up window for profit calculations.",
-        "linkName": "https://github.com/ChrisJohDev",
+        "linkName": "Jotrafin - Trading Tools",
         "linkHref":"https://github.com/ChrisJohDev/TradingTools"
     }],
     "project 11": [{
