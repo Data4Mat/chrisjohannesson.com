@@ -36,7 +36,7 @@ function loadIframes(data) {
 }
 
 function getPage(data, lang) {
-    let pages = ["home", "about", "projects", "demoPages", "contact"];
+    let pages = ["home", "about", "projects", "demoPages", "todayImage", "contact"];
     //alert(`1 ${data} index ${pages.findIndex(tmp => tmp == data)}`);
     if (pages.findIndex(tmp => tmp == data) > -1) {
         //alert(`2 ${server} /page.php?page=${data}`);

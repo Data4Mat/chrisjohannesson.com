@@ -1,5 +1,7 @@
 <?php
 
+header("Access-Control-Allow-Origin: https://apod.nasa.gov/*");
+
 include "./src/php/make_page.php";
 
 $noPageRequest = true; // true if there is no 'page' tag in the GET request.
