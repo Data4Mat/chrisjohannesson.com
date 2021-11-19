@@ -1,7 +1,8 @@
 {
-    "welcome":"Welcome to",
-    "about":"About",
-    "projects":"Projects",
-    "demo":"Demo Pages",
-    "contact":"Contact"
+    "welcome": "Welcome to",
+    "about": "About",
+    "projects": "Projects",
+    "todayImage": "Today's Image",
+    "demo": "Demo Pages",
+    "contact": "Contact"
 }
